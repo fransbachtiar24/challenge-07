@@ -1,0 +1,654 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(0, 0, 0);
+}
+
+/* navbar */
+.navbar-brand {
+  color: #ff1e1e;
+  font-style: normal;
+  font-family: "Ubuntu";
+  font-size: 25px;
+  font-weight: 900;
+  margin-left: 8px;
+}
+
+.glow {
+  cursor: pointer;
+  -webkit-transition: 1.4s ease-in-out;
+  transition: 1.4s ease-in-out;
+}
+
+.glow:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.searching {
+  border: 1px solid #ff1e1e;
+}
+
+.searching:hover {
+  border: 1px solid #ff1e1e;
+}
+
+.pencarian {
+  width: 300px;
+  height: 35px;
+}
+
+.pencarian input {
+  background: transparent;
+  border-radius: 20px;
+}
+
+.pencarian input:focus {
+  background: transparent;
+  color: white;
+}
+
+.pencarian input::placeholder {
+  color: #fff;
+}
+
+.fa-search {
+  line-height: 5px;
+}
+
+.navbar-expand-lg {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.login {
+  background: #ff1e1e;
+  border: 1px solid #ff1e1e;
+  color: #fff;
+  width: 70px;
+  border-radius: 9px;
+  opacity: 0.5;
+}
+
+.register {
+  background: #ff1e1e;
+  color: #fff;
+  width: 70px;
+  border-radius: 9px;
+  border: 1px solid #ff1e1e;
+}
+
+.react button:hover {
+  background: #fff;
+  color: #ff1e1e;
+}
+
+/* Home */
+.caraousel {
+  height: 420px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  position: relative;
+
+  z-index: 10;
+}
+.caraousel::after {
+  content: "";
+  position: absolute;
+  /* background: rgba(23, 12, 44, 0.7); */
+  background-image: linear-gradient(
+    to top,
+    rgb(15 15 40) 50px,
+    rgba(31, 31, 31, 0.4) 50%
+  );
+  height: inherit;
+  width: inherit;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.control-caraousel {
+  color: #fff;
+  z-index: 1000;
+  position: absolute;
+  width: 60%;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px !important;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+.control-caraousel h3 {
+  font-size: 2.5rem;
+  font-family: "Ubuntu";
+  font-weight: 700;
+}
+.nav p {
+  color: #ced2d6;
+  font-size: 14px;
+  font-weight: 100 !important;
+  line-height: 1.3em;
+  font-family: sans-serif;
+}
+
+.watching-btn button {
+  background: white;
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  font-family: "Ubuntu";
+  font-weight: bold;
+  width: 110px;
+  color: #ff1e1e;
+  font-size: 11px;
+}
+.watching-btn p {
+  padding-top: 6px;
+  color: #abb7c4;
+  font-weight: 100 !important;
+}
+.watching-btn button:hover {
+  background: #ff1e1e;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.disableButtonsControls {
+  position: absolute;
+  top: 0;
+}
+
+/* .slide-1 {
+  background-image: url(../img/7430.jpg);
+}
+.slide-2 {
+  background-image: url(../img/7430.jpg);
+}
+.slide-3 {
+  background-image: url(../img/7430.jpg);
+} */
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  padding: 0 20px;
+}
+
+.slide-content h1 {
+  font-size: 40px;
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.slide-content p {
+  font-size: 15px;
+  text-align: left;
+  font-style: normal;
+}
+
+.slide-content button {
+  background: #ff1e1e;
+  border: 1px solid #ff1e1e;
+  color: #fff;
+  width: 12%;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.slide-content button:hover {
+  background: #fff;
+  color: black;
+}
+
+.owl-dots {
+  width: 100%;
+  position: absolute;
+  border-radius: 20px;
+  bottom: 1%;
+}
+
+/* Home Populer */
+#populer {
+  height: auto;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/spiderman.jpg);
+}
+
+.text-Popular h1 {
+  color: #ff1e1e;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Ubuntu";
+}
+
+.movieImages {
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+}
+
+.btnMovie button {
+  color: #ff1e1e;
+  border: 1px solid #fff;
+  width: 18%;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.btnMovie button:hover {
+  color: #fff;
+  background: #ff1e1e;
+  cursor: pointer;
+}
+
+.ImgTrending {
+  height: 400px;
+}
+
+.btnTrending {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 55px;
+  border-radius: 12px;
+  border: 1px solid #ff1e1e;
+  background: #ff1e1e;
+  color: #fff;
+}
+
+.btnTrending:hover {
+  background: #fff;
+  color: #ff1e1e;
+  cursor: pointer;
+}
+.bg {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  transition: all 0.9s ease-in-out;
+  opacity: 0;
+}
+
+.bg:hover {
+  opacity: 1;
+}
+
+/* control login */
+.gradient-custom-2 {
+  background: #06283d;
+}
+
+.btn-login {
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  color: white;
+  background: #06283d;
+  border: none;
+}
+
+.btn-login:hover {
+  background: #256d85;
+  color: white;
+}
+
+.input-input {
+  border: 1px solid #06283d;
+}
+
+.forgot a {
+  color: #06283d;
+  text-decoration: none;
+}
+
+.btn-singup {
+  width: 80px;
+  border-radius: 20px;
+  height: 30px;
+  color: white;
+  background: #06283d;
+  border: 1px solid #06283d;
+}
+
+.fa-arrow-right {
+  color: #06283d;
+}
+
+.fa:hover {
+  color: #256d85;
+}
+
+.fa-facebook {
+  color: #06283d;
+  margin: 8px;
+}
+
+.fa-google {
+  color: #06283d;
+  margin: 8px;
+}
+
+.btn-singup:hover {
+  background: #256d85;
+  color: white;
+  border: 1px solid #256d85;
+}
+
+.google {
+  background: white;
+  border: none;
+}
+
+.mx-md-4 h4 {
+  font-family: sans-serif;
+}
+
+/* control scroll */
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #485461;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #a50010, #b31f2f);
+  border-radius: 150px;
+}
+
+/* control detail */
+.img-tub {
+  width: 100%;
+  max-height: 300px;
+  margin-top: 100px;
+}
+
+#details {
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: url(../img/spiderman.jpg);
+}
+
+.foto {
+  background: black;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+
+  .img-login {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+  }
+}
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}
+
+/* control movie all */
+#movie-all {
+  height: auto;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/spiderman.jpg);
+}
+
+.margin-control {
+  padding: 35px;
+}
+
+/* detail */
+.bg-detail {
+  position: absolute;
+  top: 180px;
+  background: rgba(31, 31, 31, 0.4);
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 70px;
+  top: 70px;
+}
+
+.bg-detail h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#search-id {
+  height: auto;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: url(../img/spiderman.jpg);
+}
+
+.control-title-search {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  font-family: "Ubuntu";
+}
+
+/* footer */
+.footer {
+  position: relative;
+  padding: 6rem 2rem;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1200px) {
+  /* home */
+  .btnMovie {
+    width: 500px;
+  }
+
+  /* .img-tub {
+    width: 100%;
+    height: 100vh;
+  } */
+}
+
+@media only screen and (max-width: 992px) {
+  /* home */
+  .btnMovie {
+    position: absolute;
+    top: 20px;
+    right: 55px;
+  }
+
+  .pencarian {
+    margin-top: 8px;
+    position: absolute;
+    left: 5px;
+  }
+
+  .react {
+    margin-top: 50px;
+    position: absolute;
+    left: 5px;
+  }
+}
+
+/* control detail */
+.img-detail-id {
+  border: none;
+  border-radius: 38px;
+  margin-top: 15px;
+  margin-left: 200px;
+  width: 200px;
+  height: auto;
+}
+
+.control-detail {
+  margin-top: 50px;
+  margin-right: 53px;
+  color: white;
+  text-align: justify;
+}
+
+.foto {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* home */
+  .slide-content button {
+    width: 100px;
+    right: 0;
+  }
+  /* searching */
+  .pencarian {
+    margin-top: 8px;
+    position: absolute;
+    left: 5px;
+  }
+
+  .react {
+    position: absolute;
+    left: 5px;
+    margin-top: 50px;
+  }
+
+  /* login and register */
+  .gradient-custom-2 {
+    visibility: hidden;
+  }
+
+  .foto {
+    background: black;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* navbar */
+  .pencarian {
+    margin-top: 8px;
+    position: absolute;
+    left: 5px;
+  }
+  .pencarian button {
+    background: #ff1e1e;
+  }
+  .pencarian button:hover {
+    background: #ff1e1e;
+  }
+  .react {
+    margin-top: 50px;
+  }
+
+  /* home */
+  .slide-content button {
+    width: 25%;
+  }
+
+  .btnMovie button {
+    position: absolute;
+    top: 5px;
+    width: 100px;
+  }
+
+  .bg {
+    width: 98%;
+    height: 98%;
+  }
+
+  /* register and login */
+  .gradient-custom-2 {
+    visibility: hidden;
+  }
+
+  /* .img-tub {
+    width: 100%;
+    height: 100vh;
+  } */
+}
+
+@media only screen and (max-width: 480px) {
+  .text-Popular h1 {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+
+  /* register and login */
+  .gradient-custom-2 {
+    visibility: hidden;
+  }
+
+  .img-detail-id {
+    margin: auto;
+    margin-top: 25px;
+    width: 150px;
+    height: auto;
+  }
+
+  .control-detail h1 {
+    margin-left: 45px;
+    font-size: 17px;
+    font-family: sans-serif;
+  }
+
+  .control-detail p {
+    font-size: 10px;
+    margin-left: 45px;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  .back-btn {
+    margin-bottom: 15px;
+  }
+
+  .btnMovie button {
+    width: 70px;
+    height: 40px;
+  }
+}
